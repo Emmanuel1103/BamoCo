@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Colores */
+    --color-primary: #6baedc;
+    --color-primary-hover: #00a8e8;
+    --color-background: #fafafa;
+    --color-card: #ffffff;
+    --color-text-primary: #4a4a4a;
+    --color-border: #eaeaea;
+
+    /* Tipografía */
+    --font-base: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Layout */
+    --container-max-width: 1200px;
+}
