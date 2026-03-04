@@ -12,6 +12,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+
 /* ===== Tipografía ===== */
 h1,
 h2,
@@ -43,10 +51,9 @@ a:hover {
 /* ===== Root container ===== */
 #root {
   width: 100%;
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: 2rem;
   flex-grow: 1;
+  height: 100vh;
+  flex-direction: column;
 }
 
 /* ===== Elementos base ===== */
