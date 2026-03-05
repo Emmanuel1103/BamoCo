@@ -1,0 +1,151 @@
+.hero {
+    min-height: calc(100vh - 80px);
+    /* Ajuste por el header */
+    background-color: var(--color-card);
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    /* Le damos un poco más de espacio a la imagen */
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.hero-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-size: clamp(2rem, 6vw, 4.2rem);
+    color: #333d42;
+    /* Color más oscuro según la imagen */
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    max-width: 500px;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
+    color: #7a868f;
+    /* Gris más suave */
+    margin-bottom: 3.5rem;
+    max-width: 480px;
+    line-height: 1.5;
+}
+
+.hero-actions .btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.05));
+    object-fit: contain;
+    transform: scale(1.1);
+    /* Efecto de que sobresale */
+}
+
+.scroll-indicador {
+    position: absolute;
+    bottom: -3rem;
+    /* Lo alejamos un poco más */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    font-size: 1.5rem;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+}
+
+.scroll-indicador {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+    font-size: 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+    align-items: center;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* Responsivo para móviles */
+@media (max-width: 968px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text p {
+        margin: 0 auto 2rem;
+    }
+
+    .hero-image {
+        order: -1;
+        max-width: 300px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-actions {
+        text-align: center;
+    }
+
+    .hero-image img {
+        transform: scale(1);
+    }
+
+    .hero-actions .btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}

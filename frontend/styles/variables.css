@@ -2,16 +2,16 @@
 
 :root {
     /* Colores */
-    --color-primary: #6baedc;
-    --color-primary-hover: #00a8e8;
-    --color-background: #fafafa;
-    --color-card: #ffffff;
-    --color-text-primary: #4a4a4a;
-    --color-border: #eaeaea;
+    --color-primary: #5FAED9;
+    --color-primary-hover: #4A9AC4;
+    --color-background: #EAFBFF;
+    --color-card: #FFFFFF;
+    --color-text-primary: #2F3A40;
+    --color-border: #B7EFE4;
 
     /* Tipografía */
     --font-base: 'Inter', system-ui, -apple-system, sans-serif;
 
     /* Layout */
-    --container-max-width: 1200px;
+    --container-max-width: 1400px;
 }
