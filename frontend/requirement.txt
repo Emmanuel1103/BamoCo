@@ -1,0 +1,21 @@
+# Requerimientos Técnicos del Proyecto Bamo
+
+Este archivo detalla las versiones exactas de las librerías instaladas para asegurar que el proyecto se ejecute correctamente en el futuro.
+
+## Dependencias de Producción
+- react: ^19.2.0
+- react-dom: ^19.2.0
+
+## Dependencias de Desarrollo (Herramientas)
+- vite: ^7.3.1
+- typescript: ~5.9.3
+- @vitejs/plugin-react: ^5.1.1
+- eslint: ^9.39.1
+- typescript-eslint: ^8.48.0
+
+## Entorno Sugerido
+- Node.js: Versión LTS (recomendado 20.x o superior)
+- Navegador: Chrome, Edge o Firefox (versiones recientes)
+
+---
+*Nota: Para instalar todas estas dependencias de una vez, simplemente ejecuta `npm install` en la raíz del proyecto.*
